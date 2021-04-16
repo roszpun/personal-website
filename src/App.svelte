@@ -105,12 +105,14 @@
 	}
 
 	h2 {
+		pointer-events: none;
 		color: gray;
 		text-transform: uppercase;
 		font-size: 1.5em;
 		font-weight: 100;
 	}
 	h1 {
+		pointer-events: none;
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 6em;
