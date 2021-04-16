@@ -41,7 +41,7 @@
 		}
 	x2 = r(topX, (r(minArmSize, maxArmSize) + topX) * r(1.5, 2))
 	y2 = r(topY, r(minArmSize, maxArmSize * r(1, 1.5)) + topY)
-	var grd = context.createRadialGradient(0, 0, 1000, 1680, 800, 1000);
+	var grd = context.createRadialGradient(0, 0, 1000, w.innerWidth, w.innerHeight, 1000);
 	
 		grd.addColorStop(0, colors[r(0, 5)]);
 		grd.addColorStop(1, colors[r(0, 5)]);
@@ -66,7 +66,7 @@
 		color = colors[r(0, 5)]
 		var canvasElement = document.querySelector("#myCanvas");
 		var context = canvasElement.getContext("2d");
-		if(topX > 1680 || topY > 800){
+		if(topX > w.innerWidth || topY > w.innerHeight){
 			context.clearRect(0, 0, canvasElement.width, canvasElement.height)
 			topX = 0
 			topY = 0
@@ -74,6 +74,9 @@
 	
 		createTriangle(context)
 	}
+	setInterval(() => {
+		increment()
+	}, 10_000);
 </script>
 
 <main on:click="{increment}">
