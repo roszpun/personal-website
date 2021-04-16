@@ -81,7 +81,7 @@
 
 <main on:click="{increment}">
 	<div class="content">
-		<h1 style="{`color: ${color};`}">Daniel Szerszeń</h1>
+		<h1>Daniel Szerszeń</h1>
 		<h2>FullStack developer</h2>
 	</div>
 	<canvas id="myCanvas" width="{w.innerWidth}" height="{w.innerHeight}"></canvas>
