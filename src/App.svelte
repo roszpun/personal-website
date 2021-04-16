@@ -1,7 +1,5 @@
 <script>
 	let w = window
-	console.log(window)
-	export let name;
 	let topX = 0
 	let topY = 0
 	let scale = 1
@@ -98,10 +96,6 @@
 		position: absolute;
 		left:0;
 		top: 0;
-	}
-	button{
-		position: relative;
-		z-index: 1;
 	}
 	main {
 		text-align: center;
