@@ -62,7 +62,7 @@
 	context.fill();
 		
 	}
-	const increment = () => {
+	const draw = () => {
 		color = colors[r(0, 5)]
 		var canvasElement = document.querySelector("#myCanvas");
 		var context = canvasElement.getContext("2d");
@@ -79,9 +79,10 @@
 		createTriangle(context)
 		createTriangle(context)
 	}
+	draw()
 </script>
 
-<main on:click="{increment}">
+<main>
 	<div class="content">
 		<h1>Daniel Szerszeń</h1>
 		<h2>FullStack developer</h2>
