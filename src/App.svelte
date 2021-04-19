@@ -66,17 +66,19 @@
 		color = colors[r(0, 5)]
 		var canvasElement = document.querySelector("#myCanvas");
 		var context = canvasElement.getContext("2d");
-		if(topX > w.innerWidth || topY > w.innerHeight){
-			context.clearRect(0, 0, canvasElement.width, canvasElement.height)
-			topX = 0
-			topY = 0
-		}
+// 		if(topX > w.innerWidth || topY > w.innerHeight){
+			
+// 		}
 	
 		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
+		createTriangle(context)
 	}
-	setInterval(() => {
-		increment()
-	}, 10_000);
 </script>
 
 <main on:click="{increment}">
