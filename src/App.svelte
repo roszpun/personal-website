@@ -79,7 +79,7 @@
 		createTriangle(context)
 		createTriangle(context)
 	}
-	draw()
+	window.onload = draw
 </script>
 
 <main>
