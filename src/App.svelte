@@ -82,6 +82,11 @@
 	window.onload = draw
 </script>
 
+<svelte:head>
+	<title>Daniel Szerszeń</title>
+	<meta name="robots" content="noindex nofollow" />
+	<html lang="en" />
+</svelte:head>
 <main>
 	<div class="content">
 		<h1>Daniel Szerszeń</h1>
